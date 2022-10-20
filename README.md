@@ -15,7 +15,7 @@ define four policies: seq_pol, par_pol,par_sr_pol,par_task_sr_pol:
 
   --->>  when threads number = 32:  the results of par_sr_pol,par_task_sr_pol show up&down trend.
   
-  plots: check https://github.com/hcq9102/foreach_async_SR/tree/main/results/results%3C%3E/plots
+  plots: check word file: https://github.com/hcq9102/foreach_async_SR/tree/main/results/results%3C%3E/plots
   
     
 2.using following sentences to calculate the time: (dont use decltype) 
@@ -27,7 +27,7 @@ define four policies: seq_pol, par_pol,par_sr_pol,par_task_sr_pol:
          
   --->>  when threads number = 32:  the results of par_sr_pol,par_task_sr_pol *didnt show up&down trend.
   
-  plots: check https://github.com/hcq9102/foreach_async_SR/tree/main/results/results()/plots()
+  plots: check word file: https://github.com/hcq9102/foreach_async_SR/tree/main/results/results()/plots()
 
 ### In sum, when threads num >=32, par_sr_pol(i.e, par.on(exec) ),par_task_sr_pol (i.e, par(task).on(exec)) shows bad perfromance; else(threads num <32), par.on(exec), par(task).on(exec) shows better performance than par policy.
         
