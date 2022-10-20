@@ -1,13 +1,15 @@
 # foreach_async_SR
-Source file : https://github.com/hcq9102/foreach_async_SR/blob/main/source%20files/foreach_async.cpp
+### I.  Source file : https://github.com/hcq9102/foreach_async_SR/blob/main/source%20files/foreach_async.cpp
 
 
-in hpx::main():
+### II.  In hpx::main():
 
-define four policies: seq_pol, par_pol,par_sr_pol,par_task_sr_pol:
+    first, define four policies: seq_pol, par_pol,par_sr_pol,par_task_sr_pol;
+    
+    then, calculate the time.
 
 
-### Got two sets results:
+### II(1).  Got two sets results:
 
 1.using following sentences to calculate the time: (using decltype)  https://github.com/hcq9102/foreach_async_SR/blob/main/source%20files/foreach_async.cpp#L133-L136
    
@@ -35,5 +37,5 @@ define four policies: seq_pol, par_pol,par_sr_pol,par_task_sr_pol:
   
   plots: check word file: https://github.com/hcq9102/foreach_async_SR/tree/main/results/results()/plots()
 
-### In sum, when threads num >=32, par_sr_pol(i.e, par.on(exec) ),par_task_sr_pol (i.e, par(task).on(exec)) shows bad perfromance; else(threads num <32), par.on(exec), par(task).on(exec) shows better performance than par policy.
+### II(2).  In sum, when threads num >=32, par_sr_pol(i.e, par.on(exec) ),par_task_sr_pol (i.e, par(task).on(exec)) shows bad perfromance; else(threads num <32), par.on(exec), par(task).on(exec) shows better performance than par policy.
         
