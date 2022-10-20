@@ -4,10 +4,12 @@ in hpx::main():
 
 define four policies: seq_pol, par_pol,par_sr_pol,par_task_sr_pol:
 
+
 ### Got two sets results:
 
-1.using following sentences to calculate the time: (using decltype) 
-    
+1.using following sentences to calculate the time: (using decltype)  https://github.com/hcq9102/foreach_async_SR/blob/main/source%20files/foreach_async.cpp#L133-L136
+   
+     i.e.
         double SEQ = test<decltype(seq_pol), std::false_type>(seq_pol, 10, n, std::false_type{});
         double PAR = test<decltype(par_pol), std::false_type>(par_pol, 10, n, std::false_type{});
         double Par_SR = test<decltype(par_sr_pol), std::false_type>(par_sr_pol, 10, n, std::false_type{});
@@ -19,7 +21,9 @@ define four policies: seq_pol, par_pol,par_sr_pol,par_task_sr_pol:
   
     
 2.using following sentences to calculate the time: (dont use decltype) 
-
+  https://github.com/hcq9102/foreach_async_SR/blob/main/source%20files/foreach_async.cpp#L128-L131
+  
+       i.e.    
          double SEQ = test(seq_pol, 10, n, std::false_type{});
          double PAR = test(par_pol, 10, n, std::false_type{});
          double Par_SR = test(par_sr_pol, 10, n, std::false_type{});
