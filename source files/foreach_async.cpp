@@ -151,7 +151,6 @@ int hpx_main()
             << SEQ/Par_SR <<","
             << SEQ/Par_Task_SR << "\n";
     }
-    //std::cout << "DUMP : " << res << "\n";
     fout.close();
     return hpx::local::finalize();
 
