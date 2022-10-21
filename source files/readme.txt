@@ -39,3 +39,11 @@ HPX will be installed to /work/chuanqiu/senderReceiver/installhpx
 
 1. chuanqiu@medusa01:/work/chuanqiu/senderReceiver/workhpx/test$ cmake -DCMAKE_BUILD_TYPE=Release -DHPX_DIR=/work/chuanqiu/senderReceiver/installhpx/lib64/cmake/HPX -DHPX_IGNORE_COMPILER_COMPATIBILITY=on .
 2. chuanqiu@medusa01:/work/chuanqiu/senderReceiver/workhpx/test$ make 
+
+
+
+
+
+
+//////////////////////////question///////////
+why don’t use decltype()? —>  have seen decltype(auto) may cause undefine behavior in c++14. i am not sure if use decltype(auto) will cause any side effect. so I choose to test again without decltype(auto).
